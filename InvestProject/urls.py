@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+
+admin.site.site_header = 'Duek&Gatenio invest Administrators'
+admin.site.site_title = 'Duek&Gatenio invest'
+admin.site.index_title = 'Duek&Gatenio invest'
+
 urlpatterns = [
     path('', include('portfolio.urls')),
     path('', include('funds.urls')),

@@ -14,3 +14,6 @@ class Funds(models.Model):
     # prevents adding of "s" default
     class Meta:
         verbose_name_plural = "funds"
+    
+    def __str__(self):
+        return self.owner.username
